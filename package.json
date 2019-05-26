@@ -1,6 +1,6 @@
 {
   "name": "list-map",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A list-map collection in the form of key, value, that ensures the index.",
   "main": "./dist/list-map.cjs.js",
   "module": "./dist/list-map.esm.js",
