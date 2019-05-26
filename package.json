@@ -1,9 +1,9 @@
 {
   "name": "list-map",
   "version": "0.0.1",
-  "description": "new project",
-  "main": "./dist/listmap.cjs.js",
-  "module": "./dist/listmap.esm.js",
+  "description": "A list-map collection in the form of key, value, that ensures the index.",
+  "main": "./dist/list-map.cjs.js",
+  "module": "./dist/list-map.esm.js",
   "sideEffects": false,
   "types": "declaration/index.d.ts",
   "scripts": {
@@ -13,7 +13,10 @@
     "doc": "rm -rf ./doc && jsdoc -c jsdoc.json",
     "prerelease": "npm run build && prerelease --dirs=dist,doc",
     "release": "npm run build && npm run doc && release --dirs=dist,doc",
-    "release:init": "npm run build && npm run doc && release -i --dirs=dist,doc"
+    "release:init": "npm run build && npm run doc && release -i --dirs=dist,doc",
+    "test": "jest --watchAll",
+    "coverage": "jest --coverage && print-coveralls --sort=desc",
+    "coveralls": "cat ./coverage/lcov.info | coveralls"
   },
   "repository": {
     "type": "git",
@@ -26,14 +29,28 @@
   },
   "homepage": "https://github.com/daybrush/list-map#readme",
   "dependencies": {
-    "@daybrush/utils": "^0.9.0"
+    "@daybrush/utils": "^0.10.0"
   },
+  "keywords": [
+      "list",
+      "map",
+      "list-map",
+      "collection",
+      "key",
+      "value",
+      "array"
+  ],
   "devDependencies": {
     "@daybrush/builder": "0.0.7",
     "@daybrush/jsdoc": "^0.3.7",
     "@daybrush/release": "^0.2.4",
+    "@types/jest": "^24.0.13",
+    "coveralls": "^3.0.3",
     "daybrush-jsdoc-template": "^1.5.3",
+    "jest": "^24.8.0",
+    "print-coveralls": "^1.2.2",
     "print-sizes": "0.0.4",
+    "ts-jest": "^24.0.2",
     "tslint": "^5.16.0",
     "typescript": "^3.4.5"
   }
