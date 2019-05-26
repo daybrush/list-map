@@ -1,11 +1,11 @@
 {
   "name": "list-map",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A list-map collection in the form of key, value, that ensures the index.",
   "main": "./dist/list-map.cjs.js",
   "module": "./dist/list-map.esm.js",
   "sideEffects": false,
-  "types": "declaration/index.d.ts",
+  "types": "declaration/ListMap.d.ts",
   "scripts": {
     "start": "rollup -c -w",
     "build": "rollup -c && npm run declaration && print-sizes ./dist",
