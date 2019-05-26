@@ -11,12 +11,12 @@ $ npm install list-map
 * Unpackaged
 
 ```html
-<script src="//daybrush.com/list-map/release/latest/dist/listmap.min.js"></script>
+<script src="//daybrush.com/list-map/release/latest/dist/list-map.min.js"></script>
 ```
 
 * Packaged
 ```html
-<script src="//daybrush.com/list-map/release/latest/dist/listmap.pkgd.min.js"></script>
+<script src="//daybrush.com/list-map/release/latest/dist/list-map.pkgd.min.js"></script>
 ```
 
 ## API Documents
