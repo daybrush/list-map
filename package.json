@@ -1,6 +1,6 @@
 {
   "name": "list-map",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "A list-map collection in the form of key, value, that ensures the index.",
   "main": "./dist/list-map.cjs.js",
   "module": "./dist/list-map.esm.js",
@@ -32,21 +32,21 @@
     "@daybrush/utils": "^0.10.0"
   },
   "keywords": [
-      "list",
-      "map",
-      "list-map",
-      "collection",
-      "key",
-      "value",
-      "array"
+    "list",
+    "map",
+    "list-map",
+    "collection",
+    "key",
+    "value",
+    "array"
   ],
   "devDependencies": {
-    "@daybrush/builder": "0.0.7",
+    "@daybrush/builder": "^0.1.0",
     "@daybrush/jsdoc": "^0.3.7",
     "@daybrush/release": "^0.2.4",
     "@types/jest": "^24.0.13",
     "coveralls": "^3.0.3",
-    "daybrush-jsdoc-template": "^1.5.3",
+    "daybrush-jsdoc-template": "^1.6.0",
     "jest": "^24.8.0",
     "print-coveralls": "^1.2.2",
     "print-sizes": "0.0.4",
