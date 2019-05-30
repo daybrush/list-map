@@ -30,13 +30,13 @@ export default builder([
     {
         input: "src/ListMap.ts",
         output: "./dist/list-map.esm.js",
-        exports: "named",
+        exports: "default",
         format: "es",
     },
     {
         input: "src/ListMap.ts",
         output: "./dist/list-map.cjs.js",
-        exports: "named",
+        exports: "default",
         format: "cjs",
     },
 ]);
